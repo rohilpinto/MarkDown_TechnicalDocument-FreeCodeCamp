@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MarkDown Technical Document By Rohil ( Freecodecamp )</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<nav id="navbar">
+
+  <header>Mark-Down Documentation</header>
+
+  <ul id="nav-link-wrapper">
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#How_does_it_work">How does it work</a></li>
+    <li><a class="nav-link" href="#Headings">Headings</a></li>
+    <li><a class="nav-link" href="#Bold">Bold</a></li>
+    <li><a class="nav-link" href="#Italic">Italic</a></li>
+    <li><a class="nav-link" href="#Paragraphs">Paragraphs</a></li>
+    <li><a class="nav-link" href="#Unordered_list">Unordered list</a></li>
+    <li><a class="nav-link" href="#Blockquotes">Blockquotes</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one of the world’s most popular markup languages. <br> Using Markdown is different
+        than using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown isn’t like that. When you create a Markdown-formatted file, you add Markdown syntax
+        to the text to indicate which words and phrases should look different.
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="How_does_it_work">
+    <header>How does it work</header>
+    <article class="how_does_it_work_article">
+      <p>
+        Markdown applications use something called a Markdown processor (also commonly referred to as a “parser” or an “implementation”) to take the Markdown-formatted text and output it to HTML format. At that point, your document can be viewed in a web browser
+        or combined with a style sheet and printed. You can see a visual representation of this process below. <br>
+
+      </p>
+      <span class="how_does_it_work_img_wrapper">
+        <img src="https://i.postimg.cc/zXsNmNvw/process.png" alt="" class="how_does_it_work_img" >
+          
+        </span>
+    </article>
+  </section>
+  <section class="main-section" id="Headings">
+    <header>Headings</header>
+    <article>
+      <p>
+        To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three <code> (&lt;h3&gt;) </code> , use three number signs
+        <em>(e.g., ### My Header)</em>.</p>
+
+      <table>
+        <tr>
+          <th>Mark Down</th>
+          <th>Rendered Output</th>
+        </tr>
+
+        <tr>
+          <td># Heading level 1</td>
+          <td>
+            <h1 style="font-size: 30px">Heading level 1</h1>
+          </td>
+
+        </tr>
+
+        <tr>
+          <td>## Heading level 2</td>
+          <td>
+            <h2>Heading level 2</h2>
+          </td>
+        </tr>
+
+        <tr>
+          <td>### Heading level 3</td>
+          <td>
+            <h3>Heading level 3</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#### Heading level 4</td>
+          <td>
+            <h4>Heading level 4</h4>
+          </td>
+
+        </tr>
+        <tr>
+          <td>##### Heading level 5</td>
+
+          <td>
+            <h5>Heading level 5</h5>
+          </td>
+        </tr>
+        <tr>
+          <td>###### Heading level 6</td>
+          <td>
+            <h6>Heading level 6</h6>
+          </td>
+        </tr>
+
+      </table>
+
+    </article>
+
+  </section>
+
+  <section class="main-section" id="Bold">
+    <header>Bold</header>
+    <article>
+      <p>To bold text, add two asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.</p>
+
+      <table>
+        <tr>
+          <th>Mark Down</th>
+          <th>HTML</th>
+          <th>Rendered Output</th>
+        </tr>
+
+        <tr>
+          <td>I just love **bold text**.</td>
+          <td>I just love &lt;strong&gt;bold text&lt;/strong&gt;</td>
+          <td>I just love <strong>bold text</strong>.</td>
+        </tr>
+        <tr>
+          <td>I just love __bold text__.</td>
+          <td>I just love &lt;strong&gt;bold text&lt;/strong&gt;.</td>
+          <td>I just love <strong>bold text</strong>.</td>
+        </tr>
+        <tr>
+          <td>Love**is**bold</td>
+          <td>Love&lt;strong&gt;is&lt;/strong&gt;bold</td>
+          <td>Love<strong>is</strong>bold</td>
+        </tr>
+      </table>
+    </article>
+
+  </section>
+  <section class="main-section" id="Italic">
+    <header>Italic</header>
+    <table>
+      <tr>
+        <th>Mark Down</th>
+        <th>HTML</th>
+        <th>Rendered Output</th>
+      </tr>
+      <tr>
+        <td>Italicized text is the *cat's meow*.</td>
+        <td>Italicized text is the &lt;em&gt;cat's meow&lt;/em&gt;.</td>
+        <td>Italicized text is the <em>cat's meow</em>.</td>
+      </tr>
+      <tr>
+        <td>Italicized text is the _cat's meow_.</td>
+        <td>Italicized text is the &lt;em&gt;cat's meow&lt;/em&gt;. </td>
+        <td>Italicized text is the <em>cat's meow</em>.</td>
+      </tr>
+      <tr>
+        <td>A*cat*meow</td>
+        <td>A&lt;em&gt;cat&lt;/em&gt;meow</td>
+        <td>A<em>cat</em>meow</td>
+      </tr>
+    </table>
+  </section>
+  <section class="main-section" id="Blockquotes">
+    <header>Blockquotes</header>
+    <p>To create a blockquote, add a <code>&nbsp; > &nbsp;</code> in front of a paragraph.</p>
+    <p>
+      <code>
+        >Dorothy followed her through many of the beautiful rooms in her castle.
+      </code>
+    </p>
+    <p> The rendered output looks like this: </p>
+    <!-- add border-left  -->
+    <p id="Blockquotes-markdown-output">Dorothy followed her through many of the beautiful rooms in her castle.</p>
+  </section>
+  <section class="main-section" id="Paragraphs">
+    <header>Paragraphs</header>
+    <p><code id="Paragraph-markdown-code">
+      *   This is the first list item. <br>
+      *   Here's the second list item. <br>
+
+        &nbsp;&nbsp; I need to add another paragraph below the second list item.<br>
+
+      *   And here's the third list item.
+      </code></p>
+    <p>The rendered output looks like this:</p>
+
+    <!-- &bull; &nbsp; Bullet point and space  -->
+
+    <div id="Paragraph-markdown-output">
+
+      <code> 
+       &nbsp; &bull; &nbsp; This is the first list item. <br> 
+       &nbsp; &bull; &nbsp; Here’s the second list item. <br>
+       &nbsp; &nbsp;&nbsp; I need to add another paragraph below the second list item <br>
+       &nbsp; &bull; &nbsp; And here’s the third list item. 
+     </code>
+    </div>
+
+  </section>
+
+  <section class="main-section" id="Unordered_list">
+    <header>Unordered list</header>
+
+    <p>Unordered Lists To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items. Indent one or more items to create a nested list.</p>
+
+    <table>
+      <tr>
+        <th>Mark down</th>
+        <th>HTML</th>
+        <th>Rendered Output</th>
+
+      </tr>
+
+      <tr>
+        <td> - First item</td>
+
+        <td>&lt;li&gt;First item&lt;/li&gt;</td>
+
+        <td>
+          &bull; &nbsp; First item
+        </td>
+
+      </tr>
+      <tr>
+        <td> - Second item</td>
+        <td> &lt;li&gt;Second item&lt;/li&gt;</td>
+        <td>
+          &bull; &nbsp; Second item
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>- Third item</td>
+        <td>&lt;li&gt;Third item&lt;/li&gt;</td>
+        <td>
+          &bull; &nbsp; Third item
+        </td>
+      </tr>
+
+      <tr>
+        <td>- Fourth item</td>
+        <td>&lt;li&gt;Fourth item&lt;/li&gt;</td>
+        <td> &bull; &nbsp;Fourth item</td>
+
+      </tr>
+
+    </table>
+  </section>
+
+  <section class="main-section" id="Reference">
+   
+    <header>Reference</header>
+    
+    <a href="https://www.markdownguide.org/getting-started/#how-does-it-work" target="_blank">&#x1f517; MarkDown guide</a>
+     <ul>
+      <li><a href="https://daringfireball.net/projects/markdown/syntax" target="_blank">Source 1</a></li>
+      <li><a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Source 2</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">Source 3</a></li>
+      <li><a href="https://learnxinyminutes.com/docs/markdown/" target="_blank">Source 4</a></li>
+      <li><a href="https://readwrite.com/2012/04/17/why-you-need-to-learn-markdown/" target="_blank">Source 5</a></li>   
+    </ul>
+  </section>
+
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+</body>
+</html>

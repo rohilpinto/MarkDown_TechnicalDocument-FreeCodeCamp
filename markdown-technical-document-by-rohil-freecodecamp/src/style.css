@@ -1,0 +1,316 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-fnt: "Montserrat", sans-serif;
+  --global-line-hgt: 2.3;
+  --font-h1: 35px;
+  --font-p: 16px;
+  --nav-bar-bg: #2d2f3e;
+}
+
+/* ===============
+       -Body-
+==================
+*/
+
+body {
+  font-family: var(--main-fnt);
+  line-height: var(--global-line-hgt);
+}
+
+/* ================
+      -NavBar-
+===================
+*/
+
+#navbar {
+  position: fixed;
+  left: 0;
+  width: 330px;
+  border-right: 4px solid silver;
+  height: 100%;
+  background: var(--nav-bar-bg);
+  color: white;
+   
+}
+
+#navbar header {
+  font-size: 21px;
+  line-height: 1.2;
+  padding: 20px 10px;
+}
+#navbar ul {
+  list-style: none;
+}
+.nav-link {
+  color: white;
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 2px;
+  padding-left: 7px;
+  display: inline-block;
+  
+  border-left: 5px solid lightgreen;
+  text-decoration: none;
+  background: black;
+
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  transition-duration: 100ms;
+  
+}
+
+/* ========================================
+               ----Main-Doc----
+==========================================
+*/
+
+#main-doc {
+  position: absolute;
+  left: 330px;
+  padding: 20px 20px;
+  width: auto;
+  float: right;
+  color: white;
+  background: #1a1b27;
+}
+
+/*-headers-*/
+
+#main-doc Header {
+  font-size: var(--font-h1);
+  border-bottom: 1px solid;
+}
+
+ 
+
+#main-doc p {
+  font-size: var(--font-p);
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: auto;
+}
+
+/*   - ALL -CodeBlocks- */
+
+code {
+  background: #b5b5b5;
+  display: inline-block;
+  font-size: 12px;
+  width: auto;
+
+  text-align: left;
+
+  border-radius: 2px;
+  color: black;
+}
+
+/* how_does_it_work */
+
+.how_does_it_work_img_wrapper {
+  display: block;
+  margin-left: 20px;
+  /*   border: 1px solid #000; */
+  /*   background: linear-gradient(to right, white 25%, #1A1B27 60% ) */
+}
+
+/* Italic */
+
+#Italic table {
+  margin-top: 20px;
+}
+
+/* Blockquotes */
+
+#Blockquotes-markdown-output {
+  margin-left: 20px;
+  padding-left: 10px;
+  border-left: 5px solid silver;
+}
+
+/* Paragraph-section-code */
+
+#Paragraph-markdown-code {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#Paragraph-markdown-output {
+  padding: 20px 40px;
+
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/*
+====================
+      Tables
+====================
+*/
+
+table {
+  text-align: center;
+
+  margin: auto;
+  height: 250px;
+}
+
+table,
+th,
+td {
+  width: 800px;
+
+  margin-left: 20px;
+  border: 2px solid white;
+  border-collapse: collapse;
+  border-spacing: 10px;
+ 
+  color: white;
+  padding: 0px;
+  vertical-align: middle;
+}
+
+/*==============
+    All Links
+===============*/
+
+/* ID Reference */
+
+#Reference a {
+  margin: 5px ;
+  padding: 5px;
+  display: inline-block;
+ 
+  text-decoration: none;
+  /*   border: 1px solid #000; */
+}
+
+#Reference ul li {
+  
+  list-style: none;
+  display: inline;
+  font-size: 10px;
+  margin-right: -0px;
+/*   border-right: 10px solid silver; */
+  border-left: 10px solid silver;
+}
+
+#Reference a:link {
+  color: white;
+}
+
+#Reference a:visited {
+  color: yellow;
+   
+}
+
+#Reference a:hover {
+  color: purple;
+ 
+}
+
+#Reference a:active {
+  color: silver;
+}
+
+a:hover {
+  color: #8affab;
+}
+
+@media (max-width: 1192px) {
+  :root {
+    --global-line-hgt: 2.1;
+    --font-h1: 35px;
+    --font-p: 17px;
+    --nav-bar-bg: #2d2f3e;
+  }
+
+  #navbar {
+    min-width: 599px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+
+    background: var(--nav-bar-bg);
+    color: white;
+  }
+
+  #navbar header {
+    position: absolute;
+    z-index: 500;
+    top: 0;
+
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.1;
+    padding: 20px 10px;
+  }
+
+  #nav-link-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 210px;
+    top: 60px;
+    overflow: auto;
+    z-index: -0;
+  }
+
+  .nav-link {
+    color: white;
+    
+    top: 0px;
+    width: 100%;
+    padding: 5px;
+    
+   
+    margin-bottom: 0px;
+
+    display: block;
+     border-left: 1px solid lightgreen;
+     border-bottom: 1px solid silver;
+   
+
+    transition-duration: 50ms;
+  }
+
+  /* ========================================
+               ----Main-Doc----
+==========================================
+*/
+
+  #main-doc {
+    min-width: 599px;
+    position: absolute;
+
+    top: 270px;
+    left: 0px;
+    border-top: 5px solid lightgreen;
+    border-bottom: 5px solid #ac72cc;
+    padding: 0px 10px;
+    width: 100%;
+
+    color: white;
+    background: #1a1b27;
+  }
+
+  table {
+    width: auto;
+    height: 150px;
+  }
+
+  /*     how_does_it_work   */
+
+  .how_does_it_work_img {
+    width: 320px;
+  }
+}
